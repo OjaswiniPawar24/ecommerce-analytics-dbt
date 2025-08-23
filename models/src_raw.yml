@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: E_COMMERCE_DB
+    schema: RAW
+    tables:
+      - name: customers
+      - name: orders
+      - name: payments
+      - name: products
