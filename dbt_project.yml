@@ -42,7 +42,9 @@ models:
       +materialized: view
     marts:
       +materialized: table
-
+    reporting:
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO ROLE ANALYST_ROLE"
 snapshots:
   e_commerce_analytics:
     +target_schema: snapshots

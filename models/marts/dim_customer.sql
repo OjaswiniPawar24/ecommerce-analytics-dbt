@@ -1,6 +1,9 @@
 {{
     config(
-        materialized='table'
+        materialized='table',
+        post_hook="INSERT INTO E_COMMERCE_DB.RAW.MODEL_AUDIT_LOG 
+              (model_name, run_timestamp) 
+              VALUES ('dim_customer', CURRENT_TIMESTAMP)"
     )
 }}
 select
