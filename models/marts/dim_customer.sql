@@ -1,6 +1,7 @@
 {{ config(
     materialized='incremental',
-    unique_key='customer_id'
+    unique_key='customer_id',
+    post_hook='UPDATE {{ this }} SET last_updated_at = CURRENT_TIMESTAMP'
 ) }}
 
 with base as (

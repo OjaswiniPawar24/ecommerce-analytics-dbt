@@ -42,3 +42,7 @@ models:
       +materialized: view
     marts:
       +materialized: table
+
+snapshots:
+  e_commerce_analytics:
+    +target_schema: snapshots
