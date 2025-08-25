@@ -1,13 +1,15 @@
 {{
     config(
-        materialized='table'
+        materialized='table',
+        post_hook="INSERT INTO E_COMMERCE_DB.RAW.MODEL_AUDIT_LOG 
+              (model_name, run_timestamp) 
+              VALUES ('dim_customer', CURRENT_TIMESTAMP)"
     )
 }}
-
-SELECT 
-    customer_id,
-    first_name,
-    last_name,
-    region,
-    join_date
-FROM {{ref('stg_customers')}}
+select
+        customer_id,
+        first_name,
+        last_name,
+        region,
+        join_date
+    from {{ ref('stg_customers') }}

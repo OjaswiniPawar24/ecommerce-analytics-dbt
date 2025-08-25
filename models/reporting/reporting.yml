@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: sales_by_region
+    description: Aggregated sales amount grouped by customer region.
+    columns:
+      - name: region
+        description: Region where the customer is located.
+      - name: total_sales
+        description: Total sales amount from payments linked to orders in that region.
+
+  - name: revenue_by_category
+    description: "Revenue grouped by product category."
+    columns:
+          - name: category
+            description: Product category (e.g. Electronics, Fashion,Sports, Book).
+          - name: revenue
+            description: "Total revenue generated from sales in this category."
+
+  - name: top_customers
+    description: Top 20 customers ranked by total amount spent.
+    columns:
+      - name: customer_id
+        description: Unique identifier of the customer.
+      - name: customer_name
+        description: Full name of the customer.
+      - name: total_spent
+        description: Total amount spent by the customer across all orders.
+      - name: Ranking
+        description: Rank to the customer
+      

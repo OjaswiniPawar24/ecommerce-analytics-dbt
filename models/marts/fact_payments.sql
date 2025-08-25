@@ -14,3 +14,4 @@ select
 from {{ ref('stg_payments') }} p
 left join {{ ref('stg_orders') }} o 
 on p.order_id = o.order_id
+
