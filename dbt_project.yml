@@ -40,11 +40,14 @@ models:
     # Applies to all files under models/example/
     staging:
       +materialized: view
+      +tags: ['staging']
     marts:
       +materialized: table
+      +tags: ['marts']
     reporting:
       +post-hook:
         - "GRANT SELECT ON {{ this }} TO ROLE ANALYST_ROLE"
+      +tags: ['reporting']
 snapshots:
   e_commerce_analytics:
     +target_schema: snapshots
