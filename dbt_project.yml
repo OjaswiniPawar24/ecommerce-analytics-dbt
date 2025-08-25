@@ -46,7 +46,7 @@ models:
       +tags: ['marts']
     reporting:
       +post-hook:
-        - "GRANT SELECT ON {{ this }} TO ROLE ANALYST_ROLE"
+        - "GRANT SELECT ON {{ this }} TO ROLE ANALYTICS_ROLE"
       +tags: ['reporting']
 snapshots:
   e_commerce_analytics:
