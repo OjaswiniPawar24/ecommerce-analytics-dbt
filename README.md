@@ -211,7 +211,8 @@ I connected the transformed data in Snowflake to Power BI and created an interac
    - Category filter slicer  
 
 ### Files
-- Power BI file:  `E_Commerse_Report`
+- Power BI file:  `E_Commerse_Report.pbix`
+
 👉 [Click here to view the full PDF](screenshots/E_Commerse_Report.pdf)
 
 ### Example Screenshot
