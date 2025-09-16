@@ -192,8 +192,26 @@ models:
 
 ##📊 Reporting
 
-The reporting models include:
+I connected the transformed data in Snowflake to Power BI and created an interactive dashboard.
 
-   **sales_by_region.sql** → Regional sales trends  
-   **revenue_by_category.sql** → Category-wise revenue   
-   **top_customers.sql** → Top customers by spend
+### Dashboard Pages
+1. **Overview**  
+   - Total Revenue, Total Orders, Average Order Value  
+   - Revenue trend over time  
+   - Date filter slicer  
+
+2. **Customer Insights**  
+   - Top 10 customers by spend  
+   - Revenue by region  
+   - Customer detail table with orders and revenue  
+
+3. **Product Performance**  
+   - Revenue by product category  
+   - Orders trend by category  
+   - Category filter slicer  
+
+### Files
+- Power BI file:  `E_Commerse_Report`
+
+### Example Screenshot
+![Dashboard Overview](screenshots/overview.png)
