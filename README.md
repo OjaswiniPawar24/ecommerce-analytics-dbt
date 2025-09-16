@@ -212,6 +212,7 @@ I connected the transformed data in Snowflake to Power BI and created an interac
 
 ### Files
 - Power BI file:  `E_Commerse_Report`
+👉 [Click here to view the full PDF](screenshots/E_Commerse_Report.pdf)
 
 ### Example Screenshot
 ![Dashboard Overview](screenshots/overview.png)
